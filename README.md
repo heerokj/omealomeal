@@ -8,5 +8,6 @@ OmealOmeal은 jsp, Servlet을  활용한 서울 맛집 검색 기능을 제공�
 ![erd](https://user-images.githubusercontent.com/97095532/201932382-650175be-3f4f-454d-b483-3b6100764654.PNG)
 
 ### 2. 와이어 프레임
-<img src="https://user-images.githubusercontent.com/97095532/201932984-2b5db49f-7e4a-42e9-a944-c0f1b294f4f5.png" width="500" height="600"/>
-<img src="https://user-images.githubusercontent.com/97095532/201933096-6433c92c-e847-4b82-8987-766922a34005.png" width="500" height="600"/>
+<img src="https://user-images.githubusercontent.com/97095532/201933732-03527636-c58b-4e70-b993-35c5317560f4.PNG" width="1000" height="500"/>
+
+### 3. UI 상세 디자인 
