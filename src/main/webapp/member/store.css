@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@300;500&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+/* 이미지 확대 style */
+.bigPictureWrapper {
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	z-index: 100;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.bigPicture {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bigPicture img {
+	width: 600px;
+}
+
+#container {
+	width: 1440px;
+	margin: auto;
+}
+
+.top {
+	width: 1440px;
+	height: 60px;
+}
+
+.storepicture {
+	width: 1440px;
+	height: 300px;
+	margin-bottom: 100px;
+	
+}
+
+.storepicture>img {
+	width: 100%;
+	height: 100%;
+}
+
+.contents {
+	width: 1440px;
+	display: flex;
+}
+
+.tema {
+	font-size: 32px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	color: #003049;
+}
+
+.side {
+	width: 450px;
+}
+
+#map {
+	width: 400px;
+	height: 400px;
+	margin: 0px auto;
+	margin-bottom: 40px;
+}
+
+/* 가게 추천 style */
+.recommend {
+	width: 360px;
+	margin: 0px auto;
+}
+
+.reclist {
+	margin-bottom: 30px;
+}
+
+.reclist>.recstore {
+	width: 300px;
+	height: 300px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.recstore>img {
+	width: 300px;
+	height: 240px;
+	margin-bottom: 7px;
+}
+
+.recName {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.recDist {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	display: flex;
+	align-items: center;
+}
+
+/* 가게 정보 style */
+.dec {
+	width: 870px;
+	margin: 0px auto;
+}
+
+.infoStore {
+	width: 870px;
+	height: 220px;
+}
+
+.storename {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	position: relative;
+}
+
+.star {
+	margin-left: 10px;
+	font-size: 32px;
+	color: gold;
+	position: relative;
+	top: -3px;
+}
+
+.eventbtn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	height: 80px;
+}
+
+.eventbtn>button {
+	background-color: transparent;
+	border: none;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #D62828;
+}
+
+.eventbtn>button>img {
+	width: 50px;
+	height: 50px;
+}
+
+.info>ul {
+	margin-left: 20px;
+	position: relative;
+	top: -10px;
+	list-style-type: disc;
+}
+
+.deco {
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 23px;
+	align-items: center;
+	letter-spacing: 0.03em;
+	color: #003049;
+	margin-left: 20px
+}
+
+/* 리뷰 작성 style */
+.write {
+	width: 870px;
+	height: 300px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.pane {
+	width: 800px;
+	height: 250px;
+	margin: 5px auto;
+	display: flex;
+}
+
+.pane>.writeuser {
+	width: 200px;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	left: -20px;
+}
+
+.alias {
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #003049;
+}
+
+#myform input[type=radio] {
+	display: none;
+}
+
+#myform label {
+	font-size: 1.5em;
+	color: transparent;
+	text-shadow: 0 0 0 #bbbbbb;
+}
+
+.writecomment>textarea {
+	width: 490px;
+	height: 120px;
+	padding: 10px;
+	border-radius: 10px;
+	font-family: 'Poppins';
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.03em;
+	outline-color: #FCBF49;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.25));
+}
+
+label[class="file"] {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: #EAE2B7;
+	position: relative;
+	margin-right: 10px;
+	background-image: url('../images/add-image.png');
+	background-size: 100px;
+	margin-top: 30px;
+}
+
+.writecomment>div {
+	display: flex;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.minus {
+	width: 20px;
+	height: 20px;
+	border: none;
+	background: transparent;
+	background-image: url('../images/minus.png');
+	background-size: 20px;
+	display: none;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+}
+
+#submitform, #notreview {
+	width: 100px;
+	height: 40px;
+	color: white;
+	border: none;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 12px;
+	border-radius: 12px;
+	margin-left: 30px;
+	background: #F77F00;
+	box-shadow: 0px 4px 10px rgba(233, 68, 75, 0.25);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* 리뷰보기 style */
+.review {
+	width: 870px;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.list {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.image {
+	margin-top: 20px;
+}
+
+.image>img {
+	width: 100px;
+	height: 100px;
+}
+
+.commend {
+	padding-left: 20px;
+	width: 550px;
+}
+
+.commend>pre {
+	white-space: pre-wrap;
+	width: 550px;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 0.03em;
+	color: #003049;
+}
+
+.user {
+	width: 200px;
+	text-align: center;
+}
+
+#log {
+	float: right;
+	position: absolute;
+	right: 0px;
+}
+
+.btn {
+	background: #F77F00;
+	box-shadow: 0px 4px 10px rgba(233, 68, 75, 0.25);
+	border-radius: 12px;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	width: 80px;
+	height: 35px;
+	margin-bottom: 10px;
+	border: none;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#more {
+	width: 870px;
+	height: 40px;
+	background-color: transparent;
+	border: 2px solid #FCBF49;
+	color: #F77F00;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	border-radius: 12px;
+}
+
+.storebutton {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	box-shadow: 0px 4px 10px rgba(233, 68, 75, 0.25);
+	border-radius: 12px;
+	background-color: #F77F00;
+	width: 300px;
+	height: 50px;
+	color: white;
+	border: none;
+	border-radius: 12px;
+	font-family: 'Poppins';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	margin-bottom: 27px;
+	margin-left: 20px;
+}
